@@ -20,6 +20,12 @@ class Main:
 
     def __privateIncrement1(self):
         self.localAttribute1 += 1
+    
+    def decrement2(self):
+        if self.localAttribute2 == 0:
+            raise ValueError('cannot decrement beyond 0')
+        self.localAttribute2 -= 1
+    
 
 
 if __name__ == '__main__':
